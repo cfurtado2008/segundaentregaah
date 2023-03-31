@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(29, 33, 39);
+}
+header{
+    font-size: large;
+    display: grid;
+    background-color: black;
+    width: 100%;
+}
+nav ul{
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li {
+    list-style-type:none;
+}
+a,h1,h2{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(243,243,165);
+    align-content: center;
+    padding: 10px;
+}
+h1,h2{
+    border: 3px solid white;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.card-body{
+    background-color: black;
+}
+footer{
+    font-size: large;
+    padding: 3em;
+    background-color: black;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    justify-content: space-between;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.galeria-grid{
+    grid-area: galeria;
+}
+.footer{
+    grid-area: footer;
+}
+.grilla-general{
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "galeria"
+    "footer";
+}
+.grid-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.card-text{
+    text-align: center;
+}
+.galeria-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items: center;
+}
+.logoprincipal{
+    height: 150px;
+    width: 150px;
+}
+
+.tamano{
+    width: 300px;
+    height: 300px;
+    border: 5px solid chocolate;
+}
+.tamanoEsp{
+    width: 300px;
+    height: 600px;
+    border: 5px;
+}
+.palabraEstilista {
+    font-family:'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    color:white;
+}
+p, .mb-3{
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    text-align:justify;
+    line-height: 50px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color:rgb(243, 243, 165);
+}
+.parrafosFooter{
+    font-size: 15px;
+    display: inline-block;
+    padding:5px;
+    margin-left: 5px;
+}
+.icono{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.iconoRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nombre{
+    text-align:end;
+    font-size: 10px;
+}
+@media (min-width:600px){
+
+.grilla-general{
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "galeria galeria"
+        "footer footer";
+    }
+nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.tamano, .tamanoEsp{
+    border: 8px solid rgb(151, 136, 126);
+}
+}
+
+@media (min-width:1024px){
+
+.grilla-general{
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav"
+    "galeria galeria galeria"
+    "footer footer footer";
+    }
+    
+ul li{
+    list-style-type: none;
+    display:inline-block;
+}
+.tamano, .tamanoEsp{
+    border: 8px solid black;
+}
+
+}
+
+
+
+
