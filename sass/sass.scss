@@ -2,6 +2,9 @@
 @import "general"; 
 @import "nav";
 
+.border-primary{
+    border-color: black;
+}
 a,h1,h2{
     text-decoration: none;
     font-weight: bolder;
@@ -19,9 +22,7 @@ h1,h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.card-body{
-    background-color: black;
-}
+
 footer{
     font-size: large;
     padding: 3em;
@@ -51,19 +52,7 @@ footer{
     "galeria"
     "footer";
 }
-.grid-cards{
-    display: flex;
-    justify-content:space-around;
-    padding: 30px;
-    transition: transform 3s;
-}
-.card:hover{
-    transform: scale(1.5,1);
-}
-.card-text{
-    text-align: center;
-}
-.galeria-grid{
+.galeria-grid,.container-fluid-formulario{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -73,21 +62,13 @@ footer{
 .logoprincipal{
     @include sizes(150px,150px);
 }
-
 .tamano{
     @include sizes(300px, 300px);
-    border: 5px solid chocolate;
+    border: 5px solid rgb(214, 218, 20);
 }
 .tamanoEsp{
     @include sizes(300px,600px);
     border: 5px;
-}
-.palabraEstilista {
-    font-family:'Poppins', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 3px;
-    color:white;
 }
 p, .mb-3,.form-text,.btnbtn-primary{
     font-family:'Poppins', sans-serif;
@@ -151,7 +132,6 @@ nav ul{
         justify-content: space-between;
         align-items: center;
 }
-
 .tamano, .tamanoEsp{
     border: 8px solid rgb(151, 136, 126);
 }
@@ -176,6 +156,7 @@ ul li{
 }
 .tamano, .tamanoEsp{
     border: 8px solid black;
+    padding: 20px;
 }
 
 }

@@ -4,11 +4,13 @@ header{
     background-color: black;
     width: 100%;
     nav ul{
-    background-color: black;
-    justify-content: space-between;
-    align-content: center;
-        li {
-    list-style-type:none;
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        align-content: center;
+            li {
+                list-style-type:none;
+                color: $colorgeneral;
         }
     }
 }
