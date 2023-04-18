@@ -6,16 +6,9 @@ header{
     .navbar-expand-lg{
         display: flex;
         background-color: black;
-        .border-primary{
-            border-color: black!important;
-            .navbar-toggler{
-                background-color: $colorgeneral;
-                border: 2px solid $colorgeneral;        
-                li {
-                    list-style-type:none;
-                    color: $colorgeneral;
+        li {
+            list-style-type:none;
+            color: $colorgeneral;
                 }
-            }
         }
-    }
 }

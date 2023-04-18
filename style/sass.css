@@ -24,16 +24,18 @@ header .navbar-expand-lg {
   display: flex;
   background-color: black;
 }
-header .navbar-expand-lg .border-primary {
-  border-color: black !important;
-}
-header .navbar-expand-lg .border-primary .navbar-toggler {
-  background-color: rgb(243, 243, 165);
-  border: 2px solid rgb(243, 243, 165);
-}
-header .navbar-expand-lg .border-primary .navbar-toggler li {
+header .navbar-expand-lg li {
   list-style-type: none;
   color: rgb(243, 243, 165);
+}
+
+.border-primary {
+  border-color: black !important;
+}
+
+.navbar-toggler {
+  background-color: rgb(243, 243, 165);
+  border: 2px solid rgb(243, 243, 165);
 }
 
 a, h1, h2 {
