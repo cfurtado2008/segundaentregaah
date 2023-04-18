@@ -3,14 +3,19 @@ header{
     display: grid;
     background-color: black;
     width: 100%;
-    nav ul{
+    .navbar-expand-lg{
         display: flex;
         background-color: black;
-        justify-content: space-between;
-        align-content: center;
-            li {
-                list-style-type:none;
-                color: $colorgeneral;
+        .border-primary{
+            border-color: black!important;
+            .navbar-toggler{
+                background-color: $colorgeneral;
+                border: 2px solid $colorgeneral;        
+                li {
+                    list-style-type:none;
+                    color: $colorgeneral;
+                }
+            }
         }
     }
 }

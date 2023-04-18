@@ -20,13 +20,20 @@ header {
   background-color: black;
   width: 100%;
 }
-header nav ul {
+header .navbar-expand-lg {
+  display: flex;
   background-color: black;
-  justify-content: space-between;
-  align-content: center;
 }
-header nav ul li {
+header .navbar-expand-lg .border-primary {
+  border-color: black !important;
+}
+header .navbar-expand-lg .border-primary .navbar-toggler {
+  background-color: rgb(243, 243, 165);
+  border: 2px solid rgb(243, 243, 165);
+}
+header .navbar-expand-lg .border-primary .navbar-toggler li {
   list-style-type: none;
+  color: rgb(243, 243, 165);
 }
 
 a, h1, h2 {
@@ -46,10 +53,6 @@ h1, h2 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.card-body {
-  background-color: black;
 }
 
 footer {
@@ -83,22 +86,7 @@ footer {
   grid-template-areas: "header" "nav" "galeria" "footer";
 }
 
-.grid-cards {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
-  transition: transform 3s;
-}
-
-.card:hover {
-  transform: scale(1.5, 1);
-}
-
-.card-text {
-  text-align: center;
-}
-
-.galeria-grid {
+.galeria-grid, .container-fluid-formulario {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -114,21 +102,20 @@ footer {
 .tamano {
   height: 300px;
   width: 300px;
-  border: 5px solid chocolate;
+  border: 5px solid rgb(243, 243, 165);
+  margin: 1px;
+  transition: 1s;
+}
+
+.tamano:hover {
+  transform: scale(1, 1);
 }
 
 .tamanoEsp {
   height: 600px;
   width: 300px;
-  border: 5px;
-}
-
-.palabraEstilista {
-  font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  text-align: center;
-  letter-spacing: 3px;
-  color: white;
+  border: 5px solid rgb(243, 243, 165);
+  margin: 1px;
 }
 
 p, .mb-3, .form-text, .btnbtn-primary {
@@ -197,6 +184,7 @@ p, .mb-3, .form-text, .btnbtn-primary {
   }
   .tamano, .tamanoEsp {
     border: 8px solid rgb(151, 136, 126);
+    margin: 5px;
   }
 }
 @media (min-width: 1024px) {
@@ -206,11 +194,16 @@ p, .mb-3, .form-text, .btnbtn-primary {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: "header header header" "nav nav" "galeria galeria galeria" "footer footer footer";
   }
+  .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
   ul li {
     list-style-type: none;
     display: inline-block;
   }
   .tamano, .tamanoEsp {
     border: 8px solid black;
+    padding: 5px;
   }
 }/*# sourceMappingURL=sass.css.map */
